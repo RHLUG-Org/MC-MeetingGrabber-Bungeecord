@@ -1,0 +1,24 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'eclipse'
+
+jar.archiveName = project.name + '.jar'
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+defaultTasks 'clean', 'build'
+
+repositories {
+    mavenCentral()
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+}
+
+dependencies {
+    compile group: 'net.md-5', name: 'bungeecord-api', version: '1.16-R0.5-SNAPSHOT'
+    compile group: 'org.projectlombok', name: 'lombok', version: '1.16.5'
+}
+
+processResources {
+    expand project.properties
+} 
