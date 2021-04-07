@@ -13,7 +13,7 @@ public class Meeting extends Command{
 		//TODO get config
 		super("Meeting");
 	}
-
+ 
 	@Override
 	public void execute(CommandSender sender, String[] args) {
 		if((sender instanceof ProxiedPlayer)) {
