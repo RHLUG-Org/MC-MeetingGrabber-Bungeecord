@@ -1,4 +1,4 @@
-package siliconninja.meetinggrabber.MeetingGrabber;
+package siliconninja.meetinggrabber;
 
 
 import net.md_5.bungee.api.CommandSender;
